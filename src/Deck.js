@@ -9,7 +9,7 @@ class Deck extends Component {
         const panResponder = PanResponder.create({
             onStartShouldSetPanResponder: () => true,
             onPanResponderMove: (event, gesture) => {
-                position.setValue({ x: gesture.dx, y: gesture.dy });
+               position.setValue({ x: gesture.dx, y: gesture.dy });
             },
             onPanResponderRelease: () => {}
         });
